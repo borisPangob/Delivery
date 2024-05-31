@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/itemOnHold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:title="En attente"
+        app:showAsAction="always"
+        android:icon="@drawable/ic_on_hold"/>
+    <item
+        android:id="@+id/itemInProgress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:title="En cours"
+        app:showAsAction="always"
+        android:icon="@drawable/ic_mission"/>
+    <item
+        android:id="@+id/itemHistorique"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:title="Historique"
+        />
+    <item
+        android:id="@+id/itemProfil"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:title="Profil" />
+    <item
+        android:id="@+id/itemLogout"
+        android:title="Se déconnecter" />
+</menu>

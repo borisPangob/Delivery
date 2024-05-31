@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="180dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:cardCornerRadius="15dp"
+    android:padding="8dp"
+    android:layout_margin="8dp"
+    app:cardElevation="24dp"
+    app:cardBackgroundColor="@color/blue">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/tvLabelDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginLeft="10dp"
+            android:textColor="@color/white"
+            android:textSize="16dp"
+            android:text="Date :" />
+        <TextView
+            android:id="@+id/tvDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/tvLabelDate"
+            android:layout_marginTop="8dp"
+            android:layout_marginLeft="10dp"
+            android:textColor="@color/white"
+            android:textSize="20dp"
+            tools:text="12 Janvier 2024" />
+        <TextView
+            android:id="@+id/tvLabelRef"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginLeft="10dp"
+            android:layout_below="@id/tvDate"
+            android:textColor="@color/white"
+            android:textSize="16dp"
+            android:text="Ref :" />
+        <TextView
+            android:id="@+id/tvRef"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/tvLabelDate"
+            android:layout_marginTop="8dp"
+            android:layout_marginLeft="10dp"
+            android:layout_below="@id/tvDate"
+            android:textColor="@color/white"
+            android:textSize="20dp"
+            tools:text="e3PYrUFmDzuuiVJMuQjX" />
+        <TextView
+            android:id="@+id/tvLabelDeliverer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginLeft="10dp"
+            android:layout_below="@id/tvRef"
+            android:textColor="@color/white"
+            android:textSize="16dp"
+            android:text="Chauffeur :" />
+        <TextView
+            android:id="@+id/tvDeliverer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/tvLabelDeliverer"
+            android:layout_marginTop="8dp"
+            android:layout_marginLeft="10dp"
+            android:layout_below="@id/tvLabelRef"
+            android:textColor="@color/white"
+            android:textSize="18dp"
+            tools:text="mylene.bossambo@groupe-esigelec.org" />
+        <TextView
+            android:id="@+id/tvIsAccepted"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginLeft="10dp"
+            android:layout_below="@id/tvDeliverer"
+            android:textColor="@color/white"
+            android:textSize="18dp"
+            android:text="isAccepted" />
+
+        <Switch
+            android:id="@+id/switchIsAccepted"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/tvIsAccepted"
+            android:layout_below="@id/tvDeliverer"
+            android:layout_marginTop="8dp"
+            android:layout_marginLeft="10dp"
+            />
+        <TextView
+            android:id="@+id/tvIsRealised"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginLeft="10dp"
+            android:layout_below="@id/tvDeliverer"
+            android:layout_toEndOf="@id/switchIsAccepted"
+            android:textColor="@color/white"
+            android:textSize="18dp"
+            android:text="isRealised" />
+
+        <Switch
+            android:id="@+id/switchIsRealised"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/tvIsRealised"
+            android:layout_below="@id/tvDeliverer"
+            android:layout_marginTop="8dp"
+            android:layout_marginLeft="10dp"
+            tools:checked="true"
+            />
+
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

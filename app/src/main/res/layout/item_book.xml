@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="180dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:cardCornerRadius="15dp"
+    android:padding="8dp"
+    android:layout_margin="8dp"
+    app:cardElevation="24dp"
+    app:cardBackgroundColor="@color/blue">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/imageBook"
+            android:layout_width="120dp"
+            android:layout_height="170dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="8dp"
+            android:scaleType="centerCrop"
+            tools:src="@drawable/book1"></ImageView>
+        <TextView
+            android:id="@+id/tvTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            tools:text="THINK AND GROW RICH"
+            android:textColor="@color/white"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            android:textAllCaps="true"
+            android:layout_toEndOf="@id/imageBook"/>
+        <TextView
+            android:id="@+id/tvAuthor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvTitle"
+            android:layout_toEndOf="@id/imageBook"
+            android:text="Auteur : "
+            android:textStyle="bold"
+            android:textColor="@color/white"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="NAPOLEON HILL"
+            android:layout_toEndOf="@id/tvAuthor"
+            android:layout_below="@id/tvTitle"
+            android:textColor="@color/white"/>
+        <RatingBar
+            android:id="@+id/rtBook"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvAuthor"
+            android:layout_toEndOf="@id/imageBook"
+            android:progressTint="#E2DA17"
+            tools:rating="4"
+            style="@style/Widget.AppCompat.RatingBar.Small"
+            android:secondaryProgressTint="@color/white"/>
+        <TextView
+            android:id="@+id/tvDescription"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/imageBook"
+            android:layout_below="@id/rtBook"
+            android:textColor="@color/white"
+            android:text="Description : "
+            android:textStyle="bold"
+            android:paddingTop="8dp"/>
+        <TextView
+            android:id="@+id/tvSummary"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_toEndOf="@id/imageBook"
+            android:layout_below="@id/tvDescription"
+            android:textColor="@color/white"
+            tools:text="Réfléchissez et devenez riche est un livre de napoléon hill qui prone la projection et la confiance en son potentiel futur."
+            android:textSize="14sp"
+            android:maxLines="4"
+            />
+
+
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

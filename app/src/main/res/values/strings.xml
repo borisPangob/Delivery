@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">🅳🅴🅻🅸🆅🅴🆁🆈</string>
+    <string-array name="Choix">
+        <item>client</item>
+        <item>planificateur</item>
+        <item>chauffeur</item>
+    </string-array>
+</resources>
